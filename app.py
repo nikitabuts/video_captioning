@@ -67,7 +67,7 @@ def predict(vocab=vocab, word_to_index=word_to_index,
         else:
             path = os.path.join(user_file.filename)
             captions = []
-            for i in range(5):
+            for i in range(3):
                 capt = ' '.join(generate_caption(image=user_file, vocab=vocab,
                                              word_to_index=word_to_index,
                                              unk_ix=unk_ix, pad_ix=pad_ix,
