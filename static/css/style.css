@@ -1,0 +1,20 @@
+#headerimg
+	{
+		margin: 0 0 0 10%;
+	}
+	body
+	{
+		background-color: #ffffff;
+	}
+	#the_stage
+	{
+		border:1px solid #000000;
+		border-radius: 4px;
+		padding: 0;
+		margin: auto;
+	}
+	#pred_text
+	{
+		font-weight: bold;
+		font-size: 200%;
+	}
