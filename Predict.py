@@ -73,7 +73,7 @@ def generate_caption(image, vocab, word_to_index,
                                   pad_ix=pad_ix, unk_ix=unk_ix)
             prefix_ix = torch.tensor(prefix_ix, dtype=torch.int64)
             next_word_logits = recurrent.forward(vectors_neck, prefix_ix)[0, -1]
-            next_word_probs = F.softmax(next_word_logits, dim=-1).data.detach().cpu().numpy()
+            next_word_probs = F.softmax(next_word_logits, dim=-1)
 
             assert len(next_word_probs.shape) == 1, 'probs must be one-dimensional'
             next_word_probs = next_word_probs ** t / np.sum(next_word_probs ** t)  # apply temperature
