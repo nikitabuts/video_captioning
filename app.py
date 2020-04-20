@@ -1,12 +1,11 @@
-if __name__ == '__main__':
-    from torch.utils.model_zoo import load_url
-    import os
-    import json
-    from flask_cors import CORS
-    from flask import Flask, request, render_template, jsonify
-    from BeheadedInception3 import Model
-    from CaptioningNet import CaptModel
-    from Predict import *
+from torch.utils.model_zoo import load_url
+import os
+import json
+from flask_cors import CORS
+from flask import Flask, request, render_template, jsonify
+from BeheadedInception3 import Model
+from CaptioningNet import CaptModel
+from Predict import *
 
 
 
