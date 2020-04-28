@@ -66,7 +66,7 @@ def predict(vocab=vocab, word_to_index=word_to_index,
         else:
             path = os.path.join(user_file.filename)
             captions = []
-            for i in range(3):
+            for i in range(5):
                 capt = ' '.join(generate_caption(image=user_file, vocab=vocab,
                                              word_to_index=word_to_index,
                                              unk_ix=unk_ix, pad_ix=pad_ix,
@@ -81,4 +81,3 @@ def predict(vocab=vocab, word_to_index=word_to_index,
 if __name__ == '__main__':
 	port = int(os.environ.get("PORT", 5000))
 	app.run(host='0.0.0.0', port=port, debug=False)
-    app.run()
