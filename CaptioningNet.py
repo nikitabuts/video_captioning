@@ -3,7 +3,7 @@ from torch import nn
 
 class CaptModel(nn.Module):
     def __init__(self, n_tokens, pad_ix,
-                 emb_size=128, lstm_units=256,
+                 emb_size=16, lstm_units=32,
                  cnn_feature_size=2048):
 
 
